@@ -11,17 +11,20 @@ import java.util.Scanner;
  * from user and execute the arithmetic operation
  * change the code to use enum instead String and add object oriented principles satisfy as comment in the code
  * @author sivagamasrinivasan
+ * modifier paramjeet
  * date 02/19
  */
 public class ArithmeticBase 
-{
- public double x,y;
+ {
+   //coupling principle is used.
+    public double x,y;
+    public enum s {num};
     double calculate(double x, double y) 
         {
         Scanner sc =new Scanner(System.in);
-        System.out.println("enter String");
+        System.out.println("enter number");
         String s= sc.next();
-        switch (s.toUpperCase()) 
+      switch (s.toUpperCase()) 
         {
             case "PLUS":
                 return x + y;
